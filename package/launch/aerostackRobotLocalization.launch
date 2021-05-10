@@ -1,0 +1,17 @@
+<!-- launches: aerostackRobotLocalization -->
+<launch>
+	<arg name="my_stack_directory" 		default="$(env AEROSTACK_STACK)" />
+	<arg name="drone_id_int" 		      default="0" />  	
+	<arg name="drone_id_namespace"    default="drone0" />
+
+    <arg name="config_file" 	        default="robot_localization.xml" />
+
+	<group ns="drone$(arg drone_id_int)">
+
+		<node name="aerostackRobotLocalizationNode" pkg="aerostackRobotLocalization" type="aerostackRobotLocalizationNode" output="screen">
+			<param name="droneId"     value="$(arg drone_id_int)"       type="int"/>
+			<param name="stackPath"   value="$(arg my_stack_directory)" type="string"/>
+      <param name="config_file" value="$(arg config_file)"        type="string"/>
+		</node>
+	</group>
+</launch>
