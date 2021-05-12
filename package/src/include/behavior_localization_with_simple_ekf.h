@@ -31,7 +31,7 @@
 #ifndef LOCALIZATION_WITH_SIMPLE_EKF_H
 #define LOCALIZATION_WITH_SIMPLE_EKF_H
 
-#include <behavior_execution_controller.h>
+#include <BehaviorExecutionManager.h>
 #pragma once
 
 #include <iostream>
@@ -101,9 +101,7 @@
 //#define slamdunk_has_angle
 const float slamdunk_angle = 17*(M_PI/180);
 
-namespace localization_with_simple_ekf
-{
-class BehaviorLocalizationWithSimpleEkf : public BehaviorExecutionController{
+class BehaviorLocalizationWithSimpleEkf : public BehaviorExecutionManager{
   // Constructor
 public:
   BehaviorLocalizationWithSimpleEkf();
@@ -113,7 +111,7 @@ private:
   
 
 private:
-  // BehaviorExecutionController
+  // BehaviorExecutionManager
   void onConfigure();
   void onActivate();
   void onDeactivate();
@@ -275,6 +273,5 @@ protected:
     bool startVal();
 
 };
-}
 
 #endif

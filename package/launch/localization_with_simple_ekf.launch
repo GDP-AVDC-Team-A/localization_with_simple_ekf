@@ -41,8 +41,6 @@
              <param name="~odometry_str"                        value="$(arg odometry_str)"                       type="str" /> 
         <param name="~config_file" 	                     value="$(arg config_file)" type="str"/>
             
-       <node pkg="nodelet" type="nodelet" args="manager" name="localization_with_simple_ekf_manager" output="screen" />
-       <node pkg="nodelet" type="nodelet" args="load localization_with_simple_ekf/BehaviorLocalizationWithSimpleEkf localization_with_simple_ekf_manager"
-        name="localization_with_simple_ekf" output="screen"/>
+       <node name="behavior_localization_with_simple_ekf" pkg="localization_with_simple_ekf"  type="BehaviorLocalizationWithSimpleEkf"  output="screen"/>
   </group>
 </launch>

@@ -31,8 +31,15 @@
 #include "../include/behavior_localization_with_simple_ekf.h"
 #include <pluginlib/class_list_macros.h>
 
-namespace localization_with_simple_ekf{
-BehaviorLocalizationWithSimpleEkf::BehaviorLocalizationWithSimpleEkf() : BehaviorExecutionController() {
+int main(int argc, char** argv){
+  ros::init(argc, argv, ros::this_node::getName());
+  std::cout << "Node: " << ros::this_node::getName() << " started" << std::endl;
+  BehaviorLocalizationWithSimpleEkf behavior;
+  behavior.start();
+  return 0;
+}
+
+BehaviorLocalizationWithSimpleEkf::BehaviorLocalizationWithSimpleEkf() : BehaviorExecutionManager() {
   setName("localization_with_simple_ekf");
   setExecutionGoal(ExecutionGoals::ACHIEVE_GOAL);
 }
@@ -1176,6 +1183,3 @@ bool BehaviorLocalizationWithSimpleEkf::readConfigs(std::string configFile)
 
     return true;
 }
-
-}
-PLUGINLIB_EXPORT_CLASS(localization_with_simple_ekf::BehaviorLocalizationWithSimpleEkf, nodelet::Nodelet)

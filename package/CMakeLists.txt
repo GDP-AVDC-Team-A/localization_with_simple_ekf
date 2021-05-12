@@ -27,15 +27,14 @@ set(ATTENTION_TO_QR_CODE_SOURCE_FILES
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
   roscpp
-  nodelet
   std_msgs
-  behavior_execution_controller
+  behavior_execution_manager
   behavior_execution_manager_msgs
   geometry_msgs
   droneMsgsROS
   tf
   tf_conversions
-  lib_pugixml
+  pugixml
   lib_cvgutils
   bebop_msgs
 )
@@ -54,15 +53,14 @@ catkin_package(
   LIBRARIES ${PROJECT_NAME}
   CATKIN_DEPENDS 
   roscpp 
-  nodelet
   std_msgs
-  behavior_execution_controller
+  behavior_execution_manager
   behavior_execution_manager_msgs
   geometry_msgs
   droneMsgsROS
   tf
   tf_conversions
-  lib_pugixml
+  pugixml
   lib_cvgutils
   bebop_msgs
 )
