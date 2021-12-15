@@ -20,7 +20,6 @@
   <build_depend>tf_conversions</build_depend>
   <build_depend>pugixml</build_depend>
   <build_depend>lib_cvgutils</build_depend>
-  <build_depend>bebop_msgs</build_depend>
 
   <run_depend>roscpp</run_depend>
   <run_depend>std_msgs</run_depend>
@@ -33,7 +32,6 @@
   <run_depend>tf_conversions</run_depend>
   <run_depend>pugixml</run_depend>
   <run_depend>lib_cvgutils</run_depend>
-  <run_depend>bebop_msgs</run_depend>
 
   <export>
     <nodelet plugin="${prefix}/localization_with_simple_ekf.xml" />

@@ -87,11 +87,6 @@
 #include <message_filters/time_synchronizer.h>
 #include <message_filters/sync_policies/approximate_time.h>
 
-//bebop msgs
-#include "bebop_msgs/Ardrone3PilotingStateAttitudeChanged.h"
-#include "bebop_msgs/Ardrone3PilotingStateAltitudeChanged.h"
-#include "bebop_msgs/Ardrone3PilotingStateSpeedChanged.h"
-
 //Ground Robots: Messages out
 //#include <droneMsgsROS/targetInImage.h>
 //#include <droneMsgsROS/vectorTargetsInImageStamped.h>

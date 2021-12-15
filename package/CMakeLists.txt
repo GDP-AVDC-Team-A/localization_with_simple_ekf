@@ -36,7 +36,6 @@ find_package(catkin REQUIRED COMPONENTS
   tf_conversions
   pugixml
   lib_cvgutils
-  bebop_msgs
 )
 
 ###################################
@@ -62,7 +61,6 @@ catkin_package(
   tf_conversions
   pugixml
   lib_cvgutils
-  bebop_msgs
 )
 
 ###########
