@@ -28,8 +28,7 @@ set(ATTENTION_TO_QR_CODE_SOURCE_FILES
 find_package(catkin REQUIRED COMPONENTS
   roscpp
   std_msgs
-  behavior_execution_manager
-  behavior_execution_manager_msgs
+  behavior_execution_controller
   geometry_msgs
   droneMsgsROS
   tf
@@ -53,8 +52,7 @@ catkin_package(
   CATKIN_DEPENDS 
   roscpp 
   std_msgs
-  behavior_execution_manager
-  behavior_execution_manager_msgs
+  behavior_execution_controller
   geometry_msgs
   droneMsgsROS
   tf
