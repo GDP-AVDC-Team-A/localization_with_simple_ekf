@@ -11,8 +11,7 @@
   <buildtool_depend>catkin</buildtool_depend>
   <build_depend>roscpp</build_depend>
   <build_depend>std_msgs</build_depend>
-  <build_depend>behavior_execution_manager</build_depend>
-  <build_depend>behavior_execution_manager_msgs</build_depend>
+  <build_depend>behavior_execution_controller</build_depend>
   <build_depend>geometry_msgs</build_depend>
 
   <build_depend>droneMsgsROS</build_depend>
@@ -23,10 +22,8 @@
 
   <run_depend>roscpp</run_depend>
   <run_depend>std_msgs</run_depend>
-  <run_depend>behavior_execution_manager</run_depend>
-  <run_depend>behavior_execution_manager_msgs</run_depend>
   <run_depend>geometry_msgs</run_depend>
-
+  <run_depend>behavior_execution_controller</run_depend>
   <run_depend>droneMsgsROS</run_depend>
   <run_depend>tf</run_depend>
   <run_depend>tf_conversions</run_depend>
